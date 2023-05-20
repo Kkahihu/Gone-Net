@@ -496,8 +496,40 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/about_4.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/background_1_copy.jpeg) center center no-repeat;
     background-size: cover;
+}
+.stats-counter {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background_1.jpeg") center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+@media (min-width: 1365px) {
+    .stats-counter {
+        background-attachment: fixed;
+    }
+}
+
+.stats-counter .stats-item {
+    padding: 30px;
+    width: 100%;
+}
+
+.stats-counter .stats-item span {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+}
+
+.stats-counter .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .link-animated a {
@@ -642,6 +674,27 @@ h6,
     }
 }
 
+.quote {
+    background-image: url("../img/background_1.jpeg") !important;
+    background-repeat: no-repeat;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("../img/background_1.jpeg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .icon-primary {
     color: #062caf
